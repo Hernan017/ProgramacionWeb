@@ -1,49 +1,64 @@
-<!--Doctype Indica que el documento utiliza html5-->
+<!-- Doctype indica que el documento utiliza HTML5 -->
 <!DOCTYPE html>
-<!--idenitifica el lenguaje para nuestra pagina web-->
+<!-- Identifica el lenguaje para nuestra página web -->
 <html lang="en">
-    <!-- nos permite colocar metadatos-->
+    <!-- Permite colocar metadatos sobre el documento -->
 <head>
-    <!-- meta sirve para...-->
+    <!-- Meta sirve para definir la codificación de caracteres -->
     <meta charset="UTF-8">
+    <!-- Configura la vista para dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Nos permite nombrar nuestro proyecto-->
+    <!-- Nos permite nombrar nuestro proyecto en la pestaña del navegador -->
     <title>Calculadora sencilla</title>
 
-    <!--nos permite llamar a un archivo en este caso styles-->
+    <!-- Nos permite llamar a un archivo de estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Contenedor principal de la calculadora -->
     <div class="calculator">
+        <!-- Campo de entrada donde se muestra la operación y el resultado -->
         <input type="text" id="display" class="calculator-screen" value="" disabled>
 
+        <!-- Contenedor de los botones de la calculadora -->
         <div class="calculator-buttons">
+            <!-- Botón para borrar toda la entrada -->
             <button class="button" onclick="clearDisplay()">C</button>
+            <!-- Botón para eliminar el último carácter ingresado -->
             <button class="button" onclick="deleteLast()">DEL</button>
+            <!-- Botón para agregar el operador de división -->
             <button class="button" onclick="appendToDisplay('/')">/</button>
-            <button class="button" onclick="clearDisplay('*')">*</button>
+            <!-- Botón para agregar el operador de multiplicación -->
+            <button class="button" onclick="appendToDisplay('*')">*</button>
 
+            <!-- Botones para los números del 7 al 1 -->
             <button class="button" onclick="appendToDisplay('7')">7</button>
             <button class="button" onclick="appendToDisplay('8')">8</button>
             <button class="button" onclick="appendToDisplay('9')">9</button>
+            <!-- Botón para agregar el operador de resta -->
             <button class="button" onclick="appendToDisplay('-')">-</button>
 
             <button class="button" onclick="appendToDisplay('4')">4</button>
             <button class="button" onclick="appendToDisplay('5')">5</button>
             <button class="button" onclick="appendToDisplay('6')">6</button>
+            <!-- Botón para agregar el operador de suma -->
             <button class="button" onclick="appendToDisplay('+')">+</button>
 
+            <!-- Botones para los números del 1 al 3 -->
             <button class="button" onclick="appendToDisplay('1')">1</button>
             <button class="button" onclick="appendToDisplay('2')">2</button>
             <button class="button" onclick="appendToDisplay('3')">3</button>
+            <!-- Botón para calcular el resultado -->
             <button class="button equal-button" onclick="calculator('')">=</button>
 
+            <!-- Botones para el número 0 y el punto decimal -->
             <button class="button" onclick="appendToDisplay('0')">0</button>
             <button class="button" onclick="appendToDisplay('.')">.</button>
         </div>
     </div>
 
+    <!-- Llama al archivo JavaScript que contiene la lógica de la calculadora -->
     <script src="script.js"></script>
 </body>
 </html>
