@@ -48,4 +48,13 @@ body{
     background-color: #f0f0f0;
     color: #333;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover{
+    background-color: #ddd;
+}
+
+.equal-button{
+    grid-column: span 2;
 }
