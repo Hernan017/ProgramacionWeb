@@ -103,4 +103,4 @@ function traer(){
 }
 traer()
 
-alert('Activisimo :D'+ ' ' + user.direccion.calle + ' ' + user.direccion.no + ' ' + user.direccion.colonia + ' ' + user.direccion.delegacion);
+alert('Activisimo'+ ' ' + user.direccion.calle + ' ' + user.direccion.no + ' ' + user.direccion.colonia + ' ' + user.direccion.delegacion);
