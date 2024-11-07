@@ -1,0 +1,28 @@
+/* Pos yo no le se al css en js, asi que mejor aparte :D */
+#contenedor {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.tarjeta {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
